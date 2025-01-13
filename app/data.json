@@ -1,0 +1,50 @@
+{
+    "data": [
+        {
+            "taskId": "task-123",
+            "taskName": "Complete Project Report",
+            "taskDescription": "Write and submit the Q4 project status report",
+            "taskDeadline": "2024-01-31",
+            "events": [
+                {
+                    "eventType": "STARTED", 
+                    "eventData": "2024-01-15",
+                    "eventDescription": "Initial draft creation begun"
+                },
+                {
+                    "eventType": "IN_PROGRESS",
+                    "eventData": "2024-01-20", 
+                    "eventDescription": "50% complete - executive summary finished"
+                },
+                {
+                    "eventType": "COMPLETED",
+                    "eventData": "2024-01-25",
+                    "eventDescription": "Final version submitted for review"
+                }
+            ]
+        },
+        {
+            "taskId": "XXXXXXXX",
+            "taskName": "Prepare Presentation Slides", 
+            "taskDescription": "Create slides for the upcoming client meeting",
+            "taskDeadline": "2024-02-15",
+            "events": [
+                {
+                    "eventType": "STARTED",
+                    "eventData": "2024-02-01",
+                    "eventDescription": "Initial draft creation begun"
+                },
+                {
+                    "eventType": "IN_PROGRESS",
+                    "eventData": "2024-02-05",
+                    "eventDescription": "50% complete - executive summary finished"
+                },
+                {
+                    "eventType": "COMPLETED",
+                    "eventData": "2024-02-10",
+                    "eventDescription": "Final version submitted for review"
+                }
+            ]
+        }
+    ]
+}
