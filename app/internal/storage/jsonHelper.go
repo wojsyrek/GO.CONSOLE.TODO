@@ -1,4 +1,4 @@
-package jsonHelper
+package storage
 
 import (
 	"encoding/json"
