@@ -31,7 +31,7 @@ func ReadJson[T any](path string) (*T, error) {
 }
 
 func WriteJson[T any](path string, data T) error {
-	dataString, err := json.Marshal(data)
+	dataString, err := json.MarshalIndent(data, "", "  ")
 
 	if err != nil {
 		fmt.Println("failed to marshal JSON: %w", err)

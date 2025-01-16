@@ -1,21 +1,15 @@
 package models
 
+import "time"
+
 type Event struct {
-	EventType        EventType `json:"eventType"`
-	EventData        string    `json:"eventData"`
+	EventType        string    `json:"eventType"`
+	EventDate        time.Time `json:"eventDate"`
 	EventDescription string    `json:"eventDescription"`
 }
 
-type EventType int
-
 const (
-	Create EventType = iota // 0
-	Update                  // 1
-	Delete                  // 2
-	Read                    // 3
+	Create = "CREATED"
+	Update = "UPDATED"
+	Delete = "DELETED"
 )
-
-// Add String method for better printing
-func (e EventType) String() string {
-	return [...]string{"CREATE", "UPDATE", "DELETE", "READ"}[e]
-}
